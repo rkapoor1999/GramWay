@@ -2,6 +2,10 @@
 
 ![GramWay Visualization](snapshot.png)
 
+## Live Demo
+
+Experience the interactive visualization: [GramWay Live Demo](https://rkapoor1999.github.io/GramWay/)
+
 ## Overview
 
 GramWay is an interactive data visualization that reimagines Instagram influencers as celestial bodies in a cosmic galaxy. Each influencer is represented as a star system, with their metrics visualized through an astronomical metaphor. This project demonstrates advanced D3.js techniques combined with creative data representation approaches to effectively communicate multi-dimensional social media analytics.
