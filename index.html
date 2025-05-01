@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Homework #4: Custom Visualization - CSE 578 - Fall 2024</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <style>
+        .myContainer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .title {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .description {
+            color: #aaa;
+            margin-bottom: 40px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto 40px;
+        }
+        #visualization {
+            width: 100%;
+            height: 800px;
+            background: #111;
+            position: relative;
+        }
+        .tooltip {
+            position: absolute;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 4px;
+            pointer-events: none;
+            font-size: 14px;
+            z-index: 1000;
+        }
+        .star-system {
+            cursor: pointer;
+        }
+        .orbit {
+            fill: none;
+            stroke-opacity: 0.3;
+        }
+        .star-label {
+            font-size: 12px;
+            fill: #fff;
+            text-anchor: middle;
+            pointer-events: none;
+        }
+        svg {
+            display: block;
+            margin: 0 auto;
+        }
+        body {
+            margin: 0;
+            background: #111;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="myContainer">
+        <h1 class="title">Homework #4: Custom Visualization</h1>
+        <h3 class="title">Raghav Kapoor - rkapoo22@asu.edu</h3>
+        <h2 class="title">GramWay</h2>
+        <p class="description">
+            GramWay is a galaxy of top 50 influenceers where each star represents a famous crator(pun intended!).<br>
+            The visualization employs key MARKS including central stars (circles) for individual influencers, orbiting shapes (squares for posts, triangles for average likes, 
+            diamonds for engagement rates) for metrics, and orbital paths showing metric trajectories. Visual CHANNELS encode data through star size (follower count), 
+            star color (influence score from blue to red, ranging 70-93) and orbital element sizes (magnitude of respective metrics). INTERACTIVE features enhance exploration 
+            through hover effects revealing detailed metrics, animated orbits with continuous rotation of engagement metrics, and a force-directed layout where stars repel 
+            each other to maintain a clear galaxy formation. <br>
+            This is a combinatorial visualization as in my opinion it amalgamates two known patterns: solar system/astronomy like vis(central body with orbiting elements) and
+            force-directed network layout (for star positioning). I aimed at a space like diagram where each influencer has their own solar system with them being the STAR!(centre piece)
+            while their planets are their account metrics, which acatually support them in becoming a star by gravitating around them! All together they make up a galaxy.
+        </p>
+        <div id="visualization"></div>
+    </div>
+    <script src="rkapoo22.js"></script>
+</body>
+</html>
