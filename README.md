@@ -62,4 +62,11 @@ This approach creates an intuitive astronomical metaphor where social media infl
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/gramway.git
-   cd gramway
+   cd gramway```
+2. Start a local server:
+    ```python3 -m http.server [port]```
+3. Open in Chrome (recommended browser):
+    ```http://localhost:[port]```
+
+
+### Developed by Raghav Kapoor (rkapoo22@asu.edu)
